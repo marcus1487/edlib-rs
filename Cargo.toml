@@ -28,7 +28,7 @@ lazy_static = { version = "1.4", doc = false}
 
 # for examples we need the following
 clap = {version = "2.33", doc = false}
-needletail = {version = "0.6.3", doc = false}
+needletail = { version = "0.6.3", default-features = false, features = ["xz2", "flate2", "bzip2", "zstd"] }
 cpu-time = {version = "1.0", doc = false}
 
 # decreasing order of log for debug build : (max_level_)trace debug info warn error off
